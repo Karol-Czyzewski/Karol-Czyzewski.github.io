@@ -1,1 +1,0 @@
-# Karol-Czyzewski.github.io
