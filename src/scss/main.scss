@@ -1,15 +1,91 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
+  background: #ffffff;
+  border: 16px solid #171f3f;
+}
 
+.main {
+}
+
+.hero {
+  &__photo {
+  }
+  &__header {
+  }
+  &__description {
+  }
+  &__mail {
+  }
+}
+
+.skils {
+  &__header {
+  }
+
+  &__working {
+    &--description {
+    }
+    &--list {
+    }
+    &--item {
+    }
+  }
+
+  &__konow {
+    &--description {
+    }
+    &--list {
+    }
+    &--item {
+    }
+  }
+
+  &__want {
+    &--description {
+    }
+    &--list {
+    }
+    &--item {
+    }
+  }
+}
+
+
+.projects{
+  &__header {
+  }
+  &--description {
+  }
+  &__list{
+  }
+}
+
+.contact{
+  &__header {
+  }
+  &--description {
+  }
+  &__icon{
+    &--fb {
+    }
+    &--github {
+    }
+    &--inst {
+    }
+  }
+  &__mail{
+    
+  }
 }
