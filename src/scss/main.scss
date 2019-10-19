@@ -13,50 +13,50 @@ html {
 
 body {
   background: #ffffff;
-  border: 16px solid #171f3f;
+  border: 16px solid $black;
 }
 
 .main {
-margin: 128px;
 }
 
 .hero {
+  margin: 128px;
   &__photo {
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    border: 4px solid #FFFFFF;
+    border: 4px solid #ffffff;
   }
   &__header {
     max-width: 80vh;
-
   }
   &__description {
     max-width: 60vh;
   }
   &__mail {
-
   }
 }
 
 .skills {
-  
+  margin: 128px;
   grid-template-areas: 1fr 1fr;
 
   &__header {
-  
   }
 
   &__working {
+    display: flex;
+    justify-content: space-between;
 
     &--description {
-    
     }
     &--list {
+      display: flex;
+      flex-direction:column;
       list-style: none;
       ::before {
-        content:"";
-        display: inline-block; 
+        content: "";
+        display: inline-block;
         width: 18px;
         height: 18px;
         border-radius: 50%;
@@ -65,19 +65,21 @@ margin: 128px;
       }
     }
     &--item {
-
     }
   }
 
   &__know {
-
+    display: flex;
+    justify-content: space-between;
     &--description {
     }
     &--list {
+      display: flex;
+      flex-direction:column;
       list-style: none;
       ::before {
-        content:"";
-        display: inline-block; 
+        content: "";
+        display: inline-block;
         width: 18px;
         height: 18px;
         border-radius: 50%;
@@ -90,13 +92,15 @@ margin: 128px;
   }
 
   &__want {
+    display: flex;
+    justify-content: space-between;
     &--description {
     }
     &--list {
       list-style: none;
       ::before {
-        content:"";
-        display: inline-block; 
+        content: "";
+        display: inline-block;
         width: 18px;
         height: 18px;
         border-radius: 50%;
@@ -109,22 +113,26 @@ margin: 128px;
   }
 }
 
-
-.projects{
+.projects {
+  margin: 128px;
   &__header {
   }
   &--description {
   }
-  &__list{
+  &__list {
   }
 }
 
-.contact{
+.contact {
+  padding: 128px;
+  width: 100%;
+  color: $white;
+  background-color: $black;
   &__header {
   }
   &--description {
   }
-  &__icon{
+  &__icon {
     &--fb {
     }
     &--github {
@@ -132,7 +140,6 @@ margin: 128px;
     &--inst {
     }
   }
-  &__mail{
-    
+  &__mail {
   }
 }
