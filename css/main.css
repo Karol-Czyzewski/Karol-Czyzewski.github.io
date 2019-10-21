@@ -311,8 +311,104 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
+
+body {
+  background: #ffffff;
+  border: 16px solid #171F3F; }
+
+.hero {
+  margin: 128px; }
+  .hero__photo {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffffff; }
+  .hero__header {
+    max-width: 80vh; }
+  .hero__description {
+    max-width: 60vh; }
+
+.skills {
+  margin: 128px;
+      grid-template-areas: 1fr 1fr; }
+  .skills__working {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .skills__working--list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      list-style: none; }
+      .skills__working--list ::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #06C847;
+        margin: 0 12px; }
+  .skills__know {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .skills__know--list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      list-style: none; }
+      .skills__know--list ::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #653CAD;
+        margin: 0 12px; }
+  .skills__want {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .skills__want--list {
+      list-style: none; }
+      .skills__want--list ::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #64BEFF;
+        margin: 0 12px; }
+
+.projects {
+  margin: 128px; }
+
+.contact {
+  padding: 128px;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #171F3F; }
 
 /*# sourceMappingURL=main.css.map */
