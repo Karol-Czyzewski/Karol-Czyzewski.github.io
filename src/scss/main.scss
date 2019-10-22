@@ -38,10 +38,14 @@ body {
 }
 
 .skills {
-  margin: 128px;
-  grid-template-areas: 1fr 1fr;
+  padding: 128px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
 
   &__header {
+
   }
 
   &__working {
@@ -49,11 +53,16 @@ body {
     justify-content: space-between;
 
     &--description {
+
     }
     &--list {
-      display: flex;
-      flex-direction:column;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       list-style: none;
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
       ::before {
         content: "";
         display: inline-block;
@@ -71,12 +80,18 @@ body {
   &__know {
     display: flex;
     justify-content: space-between;
+
     &--description {
+
     }
     &--list {
-      display: flex;
-      flex-direction:column;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       list-style: none;
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
       ::before {
         content: "";
         display: inline-block;
@@ -97,7 +112,13 @@ body {
     &--description {
     }
     &--list {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       list-style: none;
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
       ::before {
         content: "";
         display: inline-block;
