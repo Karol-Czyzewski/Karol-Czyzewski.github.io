@@ -39,16 +39,23 @@ body {
 
 .skills {
   padding: 128px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: space-between;
+  display: grid; 
+  grid-row-gap: 128px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4fr;
+  grid-template-areas: "header herader herader" 
+                       "working working working"
+                       "konow konow konow"
+                       "want want want";
 
   &__header {
-
+    grid-area: header;
+    border-bottom: solid $darkgrey 4px;
   }
 
   &__working {
+    border-top: solid $green 5px;
+    grid-area: working;
     display: flex;
     justify-content: space-between;
 
@@ -56,7 +63,8 @@ body {
 
     }
     &--list {
-      margin: 0;
+      text-align: left;
+      margin: 12px;
       padding: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -78,14 +86,17 @@ body {
   }
 
   &__know {
+    border-top: solid $purple 5px;
     display: flex;
+    grid-area: konow;
     justify-content: space-between;
 
     &--description {
 
     }
     &--list {
-      margin: 0;
+      text-align: left;
+      margin: 12px;
       padding: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -107,12 +118,15 @@ body {
   }
 
   &__want {
+    border-top: solid $blue 5px;
     display: flex;
+    grid-area: want;
     justify-content: space-between;
     &--description {
     }
     &--list {
-      margin: 0;
+      text-align: left;
+      margin: 12px;
       padding: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -144,12 +158,19 @@ body {
   }
 }
 
+.err-js{
+  font-size: 35px;
+}
+
 .contact {
   padding: 128px;
   width: 100%;
   color: $white;
   background-color: $black;
+  
   &__header {
+  border-top: solid $blue 4px;
+  padding: 12px 0 0 0;
   }
   &--description {
   }
@@ -164,3 +185,4 @@ body {
   &__mail {
   }
 }
+

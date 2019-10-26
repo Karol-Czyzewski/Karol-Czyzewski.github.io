@@ -12,5 +12,5 @@ const repos = resp
 })
 .catch(err => {
     console.log(err); 
-    list.innerHTML += "Nie moża wyświetliść API :) Sprawdź swoje połączenie z internetem";
+    list.innerHTML += `<p class="err-js">"Nie moża wyświetliść API :) Sprawdź swoje połączenie z internetem"</p>`;
 })
