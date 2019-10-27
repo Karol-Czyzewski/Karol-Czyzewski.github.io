@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -12,6 +13,7 @@ html {
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background: #ffffff;
   border: 16px solid $black;
 }
@@ -73,11 +75,12 @@ body {
       grid-row-gap: 12px;
       ::before {
         content: "";
+        background-image: url(/assets/img/green.png);
+        background-size: 100% 100%;
+        border-radius: 50%;
         display: inline-block;
         width: 18px;
         height: 18px;
-        border-radius: 50%;
-        background-color: $green;
         margin: 0 12px;
       }
     }
@@ -105,11 +108,12 @@ body {
       grid-row-gap: 12px;
       ::before {
         content: "";
+        background-image: url(/assets/img/purple.png);
+        background-size: 100% 100%;
         display: inline-block;
         width: 18px;
         height: 18px;
         border-radius: 50%;
-        background-color: $purple;
         margin: 0 12px;
       }
     }
@@ -135,11 +139,12 @@ body {
       grid-row-gap: 12px;
       ::before {
         content: "";
+        background-image: url(/assets/img/blue.png);
+        background-size: 100% 100%;
         display: inline-block;
         width: 18px;
         height: 18px;
         border-radius: 50%;
-        background-color: $blue;
         margin: 0 12px;
       }
     }
