@@ -7,7 +7,7 @@ fetch("https://api.github.com/users/Karol-Czyzewski/repos?sort=update")
 .then (resp => {
 const repos = resp
     for (const repo of repos) {
-        list.innerHTML += `<li><a href=${repo.html_url}>${repo.name}</a></li>`; 
+        list.innerHTML += `<li class="projects__item"><a class="projects__link" href=${repo.html_url}>${repo.name}</a></li>`; 
     }
 })
 .catch(err => {
