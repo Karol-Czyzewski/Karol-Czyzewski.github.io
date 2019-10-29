@@ -92,7 +92,7 @@ body {
   }
 
   &__know {
-    border-top: solid $purple 5px;
+    border-top: solid $purple 4px;
     display: flex;
     grid-area: konow;
     justify-content: space-between;
@@ -125,7 +125,7 @@ body {
   }
 
   &__want {
-    border-top: solid $blue 5px;
+    border-top: solid $blue 4px;
     display: flex;
     grid-area: want;
     justify-content: space-between;
