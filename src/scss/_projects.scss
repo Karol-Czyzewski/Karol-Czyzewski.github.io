@@ -1,0 +1,38 @@
+.err-js{
+    font-size: 35px;
+  }
+
+.projects {
+    background: #F5F7FA;
+    padding: 128px;
+    &__header {
+     
+    }
+    &__description {
+      
+    }
+    &__list {
+      background: #ffffff;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 24px;
+      grid-column-gap: 24px;
+      list-style: none;
+    }
+    &__item{
+      background: url(/assets/img/Github.png);
+      background-repeat: no-repeat;
+      background-position-x: 48px;
+      background-position-y: 48px;
+      margin: 12px;
+      min-height: 150px;
+      min-width: 290px;
+      max-height: 300px;
+      max-width: 580px;
+    }
+    &__link{
+      text-decoration: none;
+      color: black;
+       
+    }
+  }

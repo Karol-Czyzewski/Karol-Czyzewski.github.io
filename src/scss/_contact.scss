@@ -1,0 +1,23 @@
+.contact {
+    padding: 128px;
+    width: 100%;
+    color: $white;
+    background-color: $black;
+    
+    &__header {
+    border-top: solid $blue 4px;
+    padding: 12px 0 0 0;
+    }
+    &--description {
+    }
+    &__icon {
+      &--fb {
+      }
+      &--github {
+      }
+      &--inst {
+      }
+    }
+    &__mail {
+    }
+  }
