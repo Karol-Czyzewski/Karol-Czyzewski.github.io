@@ -4,7 +4,7 @@
 @import "_skills";
 @import "_projects";
 @import "_contact";
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -17,9 +17,14 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
   background: #ffffff;
   border: 16px solid $black;
+  color: $black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+
 }
 
 .main {
