@@ -1,0 +1,79 @@
+.my-skills {
+  max-width: 1184px;
+  margin: 0 auto;
+
+  &__header {
+    color: $black;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 48px;
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 2px solid #e5e8ec;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem 0 0;
+  &__description {
+    margin: 0;
+    color: $black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    &::before {
+      content: "";
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: $green;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      .skills-purple & {
+        background: $purple;
+      }
+      .skills-blue & {
+        background: $blue;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: calc(1.5rem + 4px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    list-style: none;
+  }
+  &__item {
+    color: $darkgrey;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    position: relative;
+    padding: 11px 0 11px 30px;
+    min-height: 40px;
+    &::before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: url("../assets/img/green.svg");
+      position: absolute;
+      top: 22px;
+      left: 0;
+      .skills-purple & {
+        background: url("../assets/img/purple.svg");
+      }
+      .skills-blue & {
+        background: url("../assets/img/blue.svg");
+      }
+    }
+  }
+}
