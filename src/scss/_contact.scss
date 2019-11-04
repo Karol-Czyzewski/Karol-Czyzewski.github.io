@@ -1,23 +1,56 @@
 .contact {
-    padding: 128px;
-    width: 100%;
+  
+  background-color: $black;
+  &__container {
+    max-width: 1184px;
     color: $white;
-    background-color: $black;
-    
-    &__header {
-    border-top: solid $blue 4px;
-    padding: 12px 0 0 0;
-    }
-    &--description {
-    }
-    &__icon {
-      &--fb {
-      }
-      &--github {
-      }
-      &--inst {
-      }
-    }
-    &__mail {
+    margin: 0 auto;
+    padding: 128px 0;
+  }
+
+  &__header {
+    max-width: 580px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    &::before {
+      content: "";
+      width: 80px;
+      height: 4px;
+      display: block;
+      background:  $havyblue;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
     }
   }
+  &__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    max-width: 580px;
+  }
+
+  .social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &__item {
+      display: flex;
+    }
+    &__icon{
+      margin: 24px 24px 48px 0;
+    }
+    &__mail{
+      border-bottom: 2px solid $havyblue;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.25rem;
+      margin-top: 60px;
+      padding-bottom: 8px;
+      color: $havyblue;
+      text-decoration: none;
+    }
+  }
+}
