@@ -5,31 +5,31 @@
     max-width: 1184px;
     color: $white;
     margin: 0 auto;
-    padding: 128px 0;
+    padding: 8rem 0;
   }
 
   &__header {
-    max-width: 580px;
+    max-width: 36.25rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 2rem;
+    line-height: 2.75rem;
     &::before {
       content: "";
-      width: 80px;
-      height: 4px;
+      width: 5rem;
+      height: 0.25rem;
       display: block;
       background:  $havyblue;
-      border-radius: 8px;
+      border-radius: 0.5rem;
       margin-bottom: 1.5rem;
     }
   }
   &__description {
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
-    max-width: 580px;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    max-width: 36.25rem;
   }
 
   .social {
@@ -47,8 +47,8 @@
       font-style: normal;
       font-weight: 500;
       font-size: 1.25rem;
-      margin-top: 60px;
-      padding-bottom: 8px;
+      margin-top: 3.75rem;
+      padding-bottom: 0.5rem;
       color: $havyblue;
       text-decoration: none;
     }
