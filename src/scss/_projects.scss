@@ -24,8 +24,7 @@
     line-height: 2.25rem;
     color: $darkgrey;
     }
-    &__list {
-      
+    &__list {  
       padding: 0;
       margin: 0;
       display: grid;
@@ -33,6 +32,9 @@
       grid-row-gap: 1.5rem;
       grid-column-gap: 1.5rem;
       list-style: none;
+      @media (max-width:$mobile) {
+        grid-template-columns: 1fr;
+      }
     }
     &__link{
       text-decoration: none;
@@ -80,6 +82,7 @@
       line-height: 2rem;
       display: inline-flex;
       align-items: center;
+      
       &::before{
         content: "";
         display: block;
@@ -87,6 +90,11 @@
         width: 1.5rem;
         background: url('../assets/img/demo.svg') center center no-repeat;
         margin-right: 0.5rem;
+        @media (max-width:$mobile) {
+          height: 24px;
+          width: 24px;
+        }
+        }
       }
       &::after{
         content: "";
@@ -95,28 +103,29 @@
         width: 0.125rem;
         pointer-events: none;
         background: #CBD2D9;
-        margin-left: 1.375rem
+        margin-left: 1.375rem;
       }
+      &__github{
+        margin-right: 3rem;
+        text-decoration: none;
+        color: #0593FB;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 2rem;
+        display: inline-flex;
+        align-items: center;
+        &::before{
+          content: "";
+          display: block;
+          height: 1.5rem;
+          width: 1.5rem;
+          background: url('../assets/img/code.svg') center center no-repeat;
+          margin-right: 0.5rem;
     }
-
-    &__github{
-      margin-right: 3rem;
-      text-decoration: none;
-      color: #0593FB;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.125rem;
-      line-height: 2rem;
-      display: inline-flex;
-      align-items: center;
-      &::before{
-        content: "";
-        display: block;
-        height: 1.5rem;
-        width: 1.5rem;
-        background: url('../assets/img/code.svg') center center no-repeat;
-        margin-right: 0.5rem;
-      }
-    }
-
   }
+}
+
+  
+
+    

@@ -19,6 +19,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0.5rem 0 0;
+  @media (max-width:$mobile) {
+    grid-template-columns: 1fr
+  }
   &__description {
     margin: 0;
     color: $black;
@@ -49,6 +52,9 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
     list-style: none;
+    @media (max-width:$mobile) {
+      grid-template-columns: 1fr
+    }
   }
   &__item {
     color: $darkgrey;
@@ -68,6 +74,10 @@
       position: absolute;
       top: 1.375rem;
       left: 0;
+      @media (max-width:$mobile) {
+        width: 18px;
+        height: 18px
+      }
       .skills-purple & {
         background: url("../assets/img/purple.svg");
       }
