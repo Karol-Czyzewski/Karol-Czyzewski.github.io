@@ -1,7 +1,10 @@
 .hero {
-    max-width: 1184px;
-    padding: 7rem 0 9.375rem;
+    max-width: 1200px;
+    padding: 7rem 112px 9.375rem;
     margin: 0 auto;
+    @media (max-width:$mobile) {
+      padding: 64px 16px 120px;
+    }
 
     &__photo {
       border-radius: 50%;

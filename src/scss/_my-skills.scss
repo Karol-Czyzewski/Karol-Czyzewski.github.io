@@ -1,7 +1,10 @@
 .my-skills {
-  max-width: 1184px;
+  max-width: 1200px;
   margin: 0 auto;
-
+  padding: 0 112px;
+  @media (max-width:$mobile) {
+  padding: 0 16px 80px;
+  }
   &__header {
     color: $black;
     font-family: Poppins;
@@ -10,15 +13,19 @@
     font-size: 2.25rem;
     line-height: 3rem;
     margin: 0;
-    padding: 1rem 0;
+    padding: 0;
     border-bottom: 0.125rem solid #e5e8ec;
+    @media (max-width:$mobile) {
+      text-align: center;
+      margin-bottom: 56px;
+    }
   }
 }
 
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0.5rem 0 0;
+  padding: 0.5rem 0;
   @media (max-width:$mobile) {
     grid-template-columns: 1fr
   }
@@ -53,7 +60,9 @@
     grid-column-gap: 1.5rem;
     list-style: none;
     @media (max-width:$mobile) {
-      grid-template-columns: 1fr
+      grid-template-columns: 1fr;
+      padding: 0;
+      
     }
   }
   &__item {

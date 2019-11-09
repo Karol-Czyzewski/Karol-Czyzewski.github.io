@@ -1,11 +1,13 @@
 .contact {
-  
   background-color: $black;
   &__container {
     max-width: 1184px;
     color: $white;
     margin: 0 auto;
-    padding: 8rem 0;
+    padding: 8rem 112px;
+    @media (max-width: $mobile) {
+      padding: 8rem 16px;
+    }
   }
 
   &__header {
@@ -19,7 +21,7 @@
       width: 5rem;
       height: 0.25rem;
       display: block;
-      background:  $havyblue;
+      background: $havyblue;
       border-radius: 0.5rem;
       margin-bottom: 1.5rem;
     }
@@ -39,10 +41,10 @@
     &__item {
       display: flex;
     }
-    &__icon{
+    &__icon {
       margin: 24px 24px 48px 0;
     }
-    &__mail{
+    &__mail {
       border-bottom: 2px solid $havyblue;
       font-style: normal;
       font-weight: 500;

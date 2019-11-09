@@ -5,15 +5,21 @@
 .projects {
     background:  $lightgrey;
     &__container{
-      padding: 8rem 0;
-      max-width: 1184px;
+      padding: 8rem 112px;
+      max-width: 1200px;
       margin: 0 auto;
+      @media (max-width:$mobile) {
+        padding: 80px 16px 80px;
+        }
     }
     &__header {
     font-style: normal;
     font-weight: 600;
     font-size: 2.25rem;
     line-height: 3rem;
+    @media (max-width:$mobile) {
+      text-align: center;
+      }
     }
     &__description {
     margin: 16px 0 64px 0;
@@ -23,6 +29,9 @@
     font-size: 1.25rem;
     line-height: 2.25rem;
     color: $darkgrey;
+    @media (max-width:$mobile) {
+      text-align: center;
+      }
     }
     &__list {  
       padding: 0;
@@ -95,16 +104,17 @@
           width: 24px;
         }
         }
+        &::after{
+          content: "";
+          display: block;
+          height: 2rem;
+          width: 0.125rem;
+          pointer-events: none;
+          background: #CBD2D9;
+          margin-left: 1.375rem;
+        }
       }
-      &::after{
-        content: "";
-        display: block;
-        height: 2rem;
-        width: 0.125rem;
-        pointer-events: none;
-        background: #CBD2D9;
-        margin-left: 1.375rem;
-      }
+
       &__github{
         margin-right: 3rem;
         text-decoration: none;
