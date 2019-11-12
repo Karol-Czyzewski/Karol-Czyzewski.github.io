@@ -29,5 +29,3 @@ console.log(resp);
     console.log(err); 
     list.innerHTML += `<p class="err-js">"Nie moża wyświetliść API :) Sprawdź swoje połączenie z internetem"</p>`;
 })
-
-console.log();
